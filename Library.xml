@@ -1,0 +1,19 @@
+
+<Root>
+  <LibraryDefinition Category="Movies">
+    <Item Title="Silent Hill" Release="2010" Price="32" />
+    <Item Title="Rush Hour 3" Release="2011" Price="28" />
+    <Item Title="Spider Man 2" Release="2012" Price="30" />
+    <Item Title="Green Mills" Release="2013" Price="26" />
+    <Item Title="Hunger Game" Release="2015" Price="35" />
+    <Item Title="Vanila's Sky" Release="2008" Price="35" />
+  </LibraryDefinition>
+  <LibraryDefinition Category="Games">
+    <Item Title="Last Of Us 4" Release="2009" Price="82" />
+    <Item Title="Resident Evil" Release="2011" Price="67" />
+    <Item Title="Call Of Duty" Release="2017" Price="75" />
+  </LibraryDefinition>
+  <LibraryDefinition Category="Books">
+    <Item Title="Vanila's Sky" Release="2008" Price="35" />
+  </LibraryDefinition>
+</Root>
