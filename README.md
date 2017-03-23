@@ -4,6 +4,7 @@ XML Serialization in Maxscript
 xmlDoc = dotNetObject "system.xml.xmlDocument"
 
 showproperties xmldoc
+
   .Attributes : <System.Xml.XmlAttributeCollection>, read-only
   .BaseURI : <System.String>, read-only
   .ChildNodes : <System.Xml.XmlNodeList>, read-only
@@ -37,6 +38,7 @@ showproperties xmldoc
   .XmlResolver : <System.Xml.XmlResolver>, write-only
   
   showmethods xmldoc
+  
   .<System.Xml.XmlNode>AppendChild <System.Xml.XmlNode>newChild
   .<System.Xml.XmlNode>Clone()
   .<System.Xml.XmlNode>CloneNode <System.Boolean>deep
