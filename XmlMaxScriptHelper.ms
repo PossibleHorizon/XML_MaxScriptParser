@@ -1,13 +1,13 @@
 
 -- ///////////////////////////////////////////////////////////////////////////////////
--- ####################  Parsing Xml Document  ################
+-- ###############################  Parsing Xml Document  ############################
 -- ///////////////////////////////////////////////////////////////////////////////////
 
 struct XmlHelper (
 
 	scriptLoaderFile = (getSourceFileName()),
 	currentScriptPath = getFilenamePath(this.ScriptLoaderFile),
-	xmlFile = CurrentScriptPath + @"Library1.xml",
+	xmlFile = CurrentScriptPath + @"Library.xml",
 		
 	fn LoadXmlDoc xmlFile =
 	(
