@@ -4,8 +4,8 @@
 <B>xmlDoc = dotNetObject "system.xml.xmlDocument"</B>
 
 
-<B>showproperties xmldoc</B>
-
+<br><B>showproperties xmldoc</B></br>
+<br>-------------------------------------------------------------------------------<br>
   <br><B>.Attributes</B> : <System.Xml.XmlAttributeCollection>, read-only</br>
   <br><B>.BaseURI</B> : <System.String>, read-only</br> 
   <br><B>.ChildNodes</B> : <System.Xml.XmlNodeList>, read-only</br>
@@ -37,10 +37,10 @@
   <br><B>.Schemas</B> : <System.Xml.Schema.XmlSchemaSet>,</br>
   <br><B>.Value</B> : <System.String>,</br>
   <br><B>.XmlResolver</B> : <System.Xml.XmlResolver>, write-only</br>
-  
+  <br>-------------------------------------------------------------------------------<br>
 
-  <B>showmethods xmldoc</B>
-  
+  <br><B>showmethods xmldoc</B></br>
+  <br>-------------------------------------------------------------------------------<br>
   <br>.<System.Xml.XmlNode><B>AppendChild</B> <System.Xml.XmlNode>newChild</br>
   <br>.<System.Xml.XmlNode><B>Clone()</B></br>
   <br>.<System.Xml.XmlNode><B>CloneNode</B> <System.Boolean>deep</br>
@@ -103,3 +103,4 @@
   <br><B>.Validate</B> <System.Xml.Schema.ValidationEventHandler>validationEventHandler <System.Xml.XmlNode>nodeToValidate</br>
   <br><B>.WriteContentTo</B> <System.Xml.XmlWriter>xw</br>
   <br><B>.WriteTo</B> <System.Xml.XmlWriter>w</br>
+<br>-------------------------------------------------------------------------------<br>
