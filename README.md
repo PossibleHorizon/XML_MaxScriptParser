@@ -1,103 +1,104 @@
-# XML_MaxscriptParser
-XML Serialization in Maxscript
 
-xmlDoc = dotNetObject "system.xml.xmlDocument"
+<B>The properties and methods of XML DotNet Object</B>
 
-showproperties xmldoc
+<B>xmlDoc = dotNetObject "system.xml.xmlDocument"</B>
 
-  .Attributes : <System.Xml.XmlAttributeCollection>, read-only
-  .BaseURI : <System.String>, read-only
-  .ChildNodes : <System.Xml.XmlNodeList>, read-only
-  .DocumentElement : <System.Xml.XmlElement>, read-only
-  .DocumentType : <System.Xml.XmlDocumentType>, read-only
-  .FirstChild : <System.Xml.XmlNode>, read-only
-  .HasChildNodes : <System.Boolean>, read-only
-  .Implementation : <System.Xml.XmlImplementation>, read-only
-  .InnerText : <System.String>, write-only
-  .InnerXml : <System.String>
-  .IsReadOnly : <System.Boolean>, read-only
-  .Item[<System.String>name] : <System.Xml.XmlElement>, read-only
-  .Item[<System.String>localname, <System.String>ns] : <System.Xml.XmlElement>, read-only
-  .LastChild : <System.Xml.XmlNode>, read-only
-  .LocalName : <System.String>, read-only
-  .Name : <System.String>, read-only
-  .NamespaceURI : <System.String>, read-only
-  .NameTable : <System.Xml.XmlNameTable>, read-only
-  .NextSibling : <System.Xml.XmlNode>, read-only
-  .NodeType : <System.Xml.XmlNodeType>, read-only
-  .OuterXml : <System.String>, read-only
-  .OwnerDocument : <System.Xml.XmlDocument>, read-only
-  .ParentNode : <System.Xml.XmlNode>, read-only
-  .Prefix : <System.String>
-  .PreserveWhitespace : <System.Boolean>
-  .PreviousSibling : <System.Xml.XmlNode>, read-only
-  .PreviousText : <System.Xml.XmlNode>, read-only
-  .SchemaInfo : <System.Xml.Schema.IXmlSchemaInfo>, read-only
-  .Schemas : <System.Xml.Schema.XmlSchemaSet>
-  .Value : <System.String>
-  .XmlResolver : <System.Xml.XmlResolver>, write-only
+
+<B>showproperties xmldoc</B>
+
+  <br><B>.Attributes</B> : <System.Xml.XmlAttributeCollection>, read-only</br>
+  <br><B>.BaseURI</B> : <System.String>, read-only</br> 
+  <br><B>.ChildNodes</B> : <System.Xml.XmlNodeList>, read-only</br>
+  <br><B>.DocumentElement</B> : <System.Xml.XmlElement>, read-only</br>
+  <br><B>.DocumentType</B> : <System.Xml.XmlDocumentType>, read-only</br>
+  <br><B>.FirstChild</B> : <System.Xml.XmlNode>, read-only</br>
+  <br><B>.HasChildNodes</B> : <System.Boolean>, read-only</br>
+  <br><B>.Implementation</B> : <System.Xml.XmlImplementation>, read-only</br>
+  <br><B>.InnerText</B> : <System.String>, write-only</br>
+  <br><B>.InnerXml</B> : <System.String>,</br>
+  <br><B>.IsReadOnly</B> : <System.Boolean>, read-only</br>
+  <br><B>.Item</B>[<System.String>name] : <System.Xml.XmlElement>, read-only</br>
+  <br><B>.Item</B>[<System.String>localname, <System.String>ns] : <System.Xml.XmlElement>, read-only</br>
+  <br><B>.LastChild</B> : <System.Xml.XmlNode>, read-only</br>
+  <br><B>.LocalName</B> : <System.String>, read-only</br>
+  <br><B>.Name</B> : <System.String>, read-only</br>
+  <br><B>.NamespaceURI</B> : <System.String>, read-only</br>
+  <br><B>.NameTable</B> : <System.Xml.XmlNameTable>, read-only</br>
+  <br><B>.NextSibling</B> : <System.Xml.XmlNode>, read-only</br>
+  <br><B>.NodeType</B> : <System.Xml.XmlNodeType>, read-only</br>
+  <br><B>.OuterXml</B> : <System.String>, read-only</br>
+  <br><B>.OwnerDocument</B> : <System.Xml.XmlDocument>, read-only</br>
+  <br><B>.ParentNode</B> : <System.Xml.XmlNode>, read-only</br>
+  <br><B>.Prefix</B> : <System.String>,</br>
+  <br><B>.PreserveWhitespace</B> : <System.Boolean></br>
+  <br><B>.PreviousSibling</B> : <System.Xml.XmlNode>, read-only</br>
+  <br><B>.PreviousText</B> : <System.Xml.XmlNode>, read-only</br>
+  <br><B>.SchemaInfo</B> : <System.Xml.Schema.IXmlSchemaInfo>, read-only</br>
+  <br><B>.Schemas</B> : <System.Xml.Schema.XmlSchemaSet>,</br>
+  <br><B>.Value</B> : <System.String>,</br>
+  <br><B>.XmlResolver</B> : <System.Xml.XmlResolver>, write-only</br>
+
+  <B>showmethods xmldoc</B>
   
-  showmethods xmldoc
-  
-  .<System.Xml.XmlNode>AppendChild <System.Xml.XmlNode>newChild
-  .<System.Xml.XmlNode>Clone()
-  .<System.Xml.XmlNode>CloneNode <System.Boolean>deep
-  .<System.Xml.XmlAttribute>CreateAttribute <System.String>name
-  .<System.Xml.XmlAttribute>CreateAttribute <System.String>qualifiedName <System.String>namespaceURI
-  .<System.Xml.XmlAttribute>CreateAttribute <System.String>prefix <System.String>localName <System.String>namespaceURI
-  .<System.Xml.XmlCDataSection>CreateCDataSection <System.String>data
-  .<System.Xml.XmlComment>CreateComment <System.String>data
-  .<System.Xml.XmlDocumentFragment>CreateDocumentFragment()
-  .<System.Xml.XmlDocumentType>CreateDocumentType <System.String>name <System.String>publicId <System.String>systemId <System.String>internalSubset
-  .<System.Xml.XmlElement>CreateElement <System.String>name
-  .<System.Xml.XmlElement>CreateElement <System.String>qualifiedName <System.String>namespaceURI
-  .<System.Xml.XmlElement>CreateElement <System.String>prefix <System.String>localName <System.String>namespaceURI
-  .<System.Xml.XmlEntityReference>CreateEntityReference <System.String>name
-  .<System.Xml.XPath.XPathNavigator>CreateNavigator()
-  .<System.Xml.XmlNode>CreateNode <System.String>nodeTypeString <System.String>name <System.String>namespaceURI
-  .<System.Xml.XmlNode>CreateNode <System.Xml.XmlNodeType>type <System.String>name <System.String>namespaceURI
-  .<System.Xml.XmlNode>CreateNode <System.Xml.XmlNodeType>type <System.String>prefix <System.String>name <System.String>namespaceURI
-  .<System.Xml.XmlProcessingInstruction>CreateProcessingInstruction <System.String>target <System.String>data
-  .<System.Xml.XmlSignificantWhitespace>CreateSignificantWhitespace <System.String>text
-  .<System.Xml.XmlText>CreateTextNode <System.String>text
-  .<System.Xml.XmlWhitespace>CreateWhitespace <System.String>text
-  .<System.Xml.XmlDeclaration>CreateXmlDeclaration <System.String>version <System.String>encoding <System.String>standalone
-  .<System.Boolean>Equals <System.Object>obj
-  .[static]<System.Boolean>Equals <System.Object>objA <System.Object>objB
-  .<System.Xml.XmlElement>GetElementById <System.String>elementId
-  .<System.Xml.XmlNodeList>GetElementsByTagName <System.String>name
-  .<System.Xml.XmlNodeList>GetElementsByTagName <System.String>localName <System.String>namespaceURI
-  .<System.Collections.IEnumerator>GetEnumerator()
-  .<System.Int32>GetHashCode()
-  .<System.String>GetNamespaceOfPrefix <System.String>prefix
-  .<System.String>GetPrefixOfNamespace <System.String>namespaceURI
-  .<System.Type>GetType()
-  .<System.Xml.XmlNode>ImportNode <System.Xml.XmlNode>node <System.Boolean>deep
-  .<System.Xml.XmlNode>InsertAfter <System.Xml.XmlNode>newChild <System.Xml.XmlNode>refChild
-  .<System.Xml.XmlNode>InsertBefore <System.Xml.XmlNode>newChild <System.Xml.XmlNode>refChild
-  .Load <System.IO.Stream>inStream
-  .Load <System.IO.TextReader>txtReader
-  .Load <System.String>filename
-  .Load <System.Xml.XmlReader>reader
-  .LoadXml <System.String>xml
-  .Normalize()
-  .<System.Xml.XmlNode>PrependChild <System.Xml.XmlNode>newChild
-  .<System.Xml.XmlNode>ReadNode <System.Xml.XmlReader>reader
-  .[static]<System.Boolean>ReferenceEquals <System.Object>objA <System.Object>objB
-  .RemoveAll()
-  .<System.Xml.XmlNode>RemoveChild <System.Xml.XmlNode>oldChild
-  .<System.Xml.XmlNode>ReplaceChild <System.Xml.XmlNode>newChild <System.Xml.XmlNode>oldChild
-  .Save <System.String>filename
-  .Save <System.IO.Stream>outStream
-  .Save <System.Xml.XmlWriter>w
-  .Save <System.IO.TextWriter>writer
-  .<System.Xml.XmlNodeList>SelectNodes <System.String>xpath
-  .<System.Xml.XmlNodeList>SelectNodes <System.String>xpath <System.Xml.XmlNamespaceManager>nsmgr
-  .<System.Xml.XmlNode>SelectSingleNode <System.String>xpath
-  .<System.Xml.XmlNode>SelectSingleNode <System.String>xpath <System.Xml.XmlNamespaceManager>nsmgr
-  .<System.Boolean>Supports <System.String>feature <System.String>version
-  .<System.String>ToString()
-  .Validate <System.Xml.Schema.ValidationEventHandler>validationEventHandler
-  .Validate <System.Xml.Schema.ValidationEventHandler>validationEventHandler <System.Xml.XmlNode>nodeToValidate
-  .WriteContentTo <System.Xml.XmlWriter>xw
-  .WriteTo <System.Xml.XmlWriter>w
+  <br>.<System.Xml.XmlNode><B>AppendChild</B> <System.Xml.XmlNode>newChild</br>
+  <br>.<System.Xml.XmlNode><B>Clone()</B></br>
+  <br>.<System.Xml.XmlNode><B>CloneNode</B> <System.Boolean>deep</br>
+  <br>.<System.Xml.XmlAttribute><B>CreateAttribute</B> <System.String>name</br>
+  <br>.<System.Xml.XmlAttribute><B>CreateAttribute</B> <System.String>qualifiedName <System.String>namespaceURI</br>
+  <br>.<System.Xml.XmlAttribute><B>CreateAttribute</B> <System.String>prefix <System.String>localName <System.String>namespaceURI</br>
+  <br>.<System.Xml.XmlCDataSection><B>CreateCDataSection</B> <System.String>data</br>
+  <br>.<System.Xml.XmlComment><B>CreateComment</B> <System.String>data</br>
+  <br>.<System.Xml.XmlDocumentFragment><B>CreateDocumentFragment()</B></br>
+  <br>.<System.Xml.XmlDocumentType><B>CreateDocumentType</B> <System.String>name <System.String>publicId <System.String>systemId <System.String>internalSubset</br>
+  <br>.<System.Xml.XmlElement><B>CreateElement</B> <System.String>name</br>
+  <br>.<System.Xml.XmlElement><B>CreateElement</B> <System.String>qualifiedName <System.String>namespaceURI</br>
+  <br>.<System.Xml.XmlElement><B>CreateElement</B> <System.String>prefix <System.String>localName <System.String>namespaceURI</br>
+  <br>.<System.Xml.XmlEntityReference><B>CreateEntityReference</B> <System.String>name</br>
+  <br>.<System.Xml.XPath.XPathNavigator><B>CreateNavigator()</B></br>
+  <br>.<System.Xml.XmlNode><B>CreateNode</B> <System.String>nodeTypeString <System.String>name <System.String>namespaceURI</br>
+  <br>.<System.Xml.XmlNode><B>CreateNode</B> <System.Xml.XmlNodeType>type <System.String>name <System.String>namespaceURI</br>
+  <br>.<System.Xml.XmlNode><B>CreateNode</B> <System.Xml.XmlNodeType>type <System.String>prefix <System.String>name <System.String>namespaceURI</br>
+  <br>.<System.Xml.XmlProcessingInstruction><B>CreateProcessingInstruction</B> <System.String>target <System.String>data</br>
+  <br>.<System.Xml.XmlSignificantWhitespace><B>CreateSignificantWhitespace</B> <System.String>text</br>
+  <br>.<System.Xml.XmlText><B>CreateTextNode</B> <System.String>text</br>
+  <br>.<System.Xml.XmlWhitespace><B>CreateWhitespace</B> <System.String>text</br>
+  <br>.<System.Xml.XmlDeclaration><B>CreateXmlDeclaration</B> <System.String>version <System.String>encoding <System.String>standalone</br>
+  <br>.<System.Boolean><B>Equals</B> <System.Object>obj</br>
+  <br>.[static]<System.Boolean><B>Equals</B> <System.Object>objA <System.Object>objB</br>
+  <br>.<System.Xml.XmlElement><B>GetElementById</B> <System.String>elementId</br>
+  <br>.<System.Xml.XmlNodeList><B>GetElementsByTagName</B> <System.String>name</br>
+  <br>.<System.Xml.XmlNodeList><B>GetElementsByTagName</B> <System.String>localName <System.String>namespaceURI</br>
+  <br>.<System.Collections.IEnumerator><B>GetEnumerator()</B></br>
+  <br>.<System.Int32><B>GetHashCode()</B></br>
+  <br>.<System.String><B>GetNamespaceOfPrefix</B> <System.String>prefix</br>
+  <br>.<System.String><B>GetPrefixOfNamespace</B> <System.String>namespaceURI</br>
+  <br>.<System.Type><B>GetType()</B></br>
+  <br>.<System.Xml.XmlNode><B>ImportNode</B> <System.Xml.XmlNode>node <System.Boolean>deep</br>
+  <br>.<System.Xml.XmlNode><B>InsertAfter</B> <System.Xml.XmlNode>newChild <System.Xml.XmlNode>refChild</br>
+  <br>.<System.Xml.XmlNode><B>InsertBefore</B> <System.Xml.XmlNode>newChild <System.Xml.XmlNode>refChild</br>
+  <br><B>.Load</B> <System.IO.Stream>inStream</br>
+  <br><B>.Load</B> <System.IO.TextReader>txtReader</br>
+  <br><B>.Load</B> <System.String>filename</br>
+  <br><B>.Load</B> <System.Xml.XmlReader>reader</br>
+  <br><B>.LoadXml</B> <System.String>xml</br>
+  <br><B>.Normalize()</B></br>
+  <br>.<System.Xml.XmlNode><B>PrependChild</B> <System.Xml.XmlNode>newChild</br>
+  <br>.<System.Xml.XmlNode><B>ReadNode</B> <System.Xml.XmlReader>reader</br>
+  <br>.[static]<System.Boolean><B>ReferenceEquals</B> <System.Object>objA <System.Object>objB</br>
+  <br>.<B>RemoveAll()</B></br>
+  <br>.<System.Xml.XmlNode><B>RemoveChild</B> <System.Xml.XmlNode>oldChild</br>
+  <br>.<System.Xml.XmlNode><B>ReplaceChild</B> <System.Xml.XmlNode>newChild <System.Xml.XmlNode>oldChild</br>
+  <br><B>.Save</B> <System.String>filename</br>
+  <br><B>.Save</B> <System.IO.Stream>outStream</br>
+  <br><B>.Save</B> <System.Xml.XmlWriter>w</br>
+  <br><B>.Save</B> <System.IO.TextWriter>writer</br>
+  <br>.<System.Xml.XmlNodeList><B><B>SelectNodes</B> <System.String>xpath</br>
+  <br>.<System.Xml.XmlNodeList><B>SelectNodes</B> <System.String>xpath <System.Xml.XmlNamespaceManager>nsmgr</br>
+  <br>.<System.Xml.XmlNode><B>SelectSingleNode</B> <System.String>xpath</br>
+  <br>.<System.Xml.XmlNode><B>SelectSingleNode</B> <System.String>xpath <System.Xml.XmlNamespaceManager>nsmgr</br>
+  <br>.<System.Boolean><B>Supports</B> <System.String>feature <System.String>version</br>
+  <br>.<System.String><B>ToString()</B></br>
+  <br><B>.Validate</B> <System.Xml.Schema.ValidationEventHandler>validationEventHandler</br>
+  <br><B>.Validate</B> <System.Xml.Schema.ValidationEventHandler>validationEventHandler <System.Xml.XmlNode>nodeToValidate</br>
+  <br><B>.WriteContentTo</B> <System.Xml.XmlWriter>xw</br>
+  <br><B>.WriteTo</B> <System.Xml.XmlWriter>w</br>
