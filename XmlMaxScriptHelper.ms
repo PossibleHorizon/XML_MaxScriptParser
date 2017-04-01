@@ -22,6 +22,11 @@ struct XmlHelper (
 		return root
 	),
 	
+	fn SaveXml xmlDoc xmlFile =
+	(
+		xmlDoc.Save xmlFile
+	),
+	
 	fn ReadXml  xmlFile xmlDefinition  xmlItem =
 	(
 		local library =#()	
@@ -97,50 +102,8 @@ struct XmlHelper (
 					root.AppendChild newDefination
 				)
 			)
-			doc.Save xmlFile
+			SaveXml doc xmlFile
 		)
-	),
-	
-	fn RemoveItemFromXml xmlDefinition targetCategory targetItem = 
-	(
-		local doc = LoadXmlDoc xmlFile
-		if doc ==undefined do break
-			
-		local root = GetXmlRoot doc
-		if root == undefined do break
-
-		local definitions = root.GetElementsByTagName xmlDefinition	
-		local collection = #()
-		for i = 0 to definitions.count - 1 do 
-		(			
-			local definition = definitions.item i			 			
-			local currentCategory = definition.GetAttribute "Category" 
-			if (currentCategory == targetCategory) then 
-			(
-				local xmlItems = definition.GetElementsByTagName "Item"					
-				for j = 0 to xmlItems.count - 1 do (
-					local eachItem = xmlItems.item j
-					local title = eachItem.GetAttribute "Title" 
-					local release = eachItem.GetAttribute "Release" 
-					local price = eachItem.GetAttribute "Price"
-						
-					if (title == targetItem[1]) and (release == targetItem[2]) and (price == targetItem[3]) then 
-					(												
-						format "Traget item was found: = %\n" title)
-						--definition.RemoveChild eachItem
-						append collection eachitem
-					)
-				)
-		)
-		
-		if collection.count < 1 then break
-		
-		for i = 0 to definitions.count - 1 do 
-		(
-			local definition = definitions.item i
-			for t = 0 to collection.count -1 do definition.RemoveChild collection[t]
-		)
-		doc.Save xmlFile
 	),
 	
 	fn ToString xmlData = 
@@ -158,11 +121,9 @@ struct XmlHelper (
 )
 
 xmlHelperObject = XmlHelper()
-if doesfileexist xmlHelperObject.xmlFile do (
-	
-	local xmlData = xmlHelperObject.ReadXml  xmlHelperObject.xmlFile "LibraryDefinition" "Item"
-	xmlHelperObject.ToString xmlData
-
+if doesfileexist xmlHelperObject.xmlFile do 
+(	
+	local xmlData = xmlHelperObject.ReadXml  xmlHelperObject.xmlFile "LibraryDefinition" "Item"	
 	xmlHelperObject.AddItemToXml "LibraryDefinition" "Movies"  #("Vanila's Sky", "2008", "35")
-	--xmlHelperObject.RemoveItemFromXml "LibraryDefinition" "Games"  #("Vanila's Sky", "2008", "35")
+	xmlHelperObject.ToString xmlData
 )
