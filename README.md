@@ -37,6 +37,7 @@
   <br><B>.Schemas</B> : <System.Xml.Schema.XmlSchemaSet>,</br>
   <br><B>.Value</B> : <System.String>,</br>
   <br><B>.XmlResolver</B> : <System.Xml.XmlResolver>, write-only</br>
+  
 
   <B>showmethods xmldoc</B>
   
@@ -92,7 +93,7 @@
   <br><B>.Save</B> <System.IO.Stream>outStream</br>
   <br><B>.Save</B> <System.Xml.XmlWriter>w</br>
   <br><B>.Save</B> <System.IO.TextWriter>writer</br>
-  <br>.<System.Xml.XmlNodeList><B><B>SelectNodes</B> <System.String>xpath</br>
+  <br>.<System.Xml.XmlNodeList><B>SelectNodes</B> <System.String>xpath</br>
   <br>.<System.Xml.XmlNodeList><B>SelectNodes</B> <System.String>xpath <System.Xml.XmlNamespaceManager>nsmgr</br>
   <br>.<System.Xml.XmlNode><B>SelectSingleNode</B> <System.String>xpath</br>
   <br>.<System.Xml.XmlNode><B>SelectSingleNode</B> <System.String>xpath <System.Xml.XmlNamespaceManager>nsmgr</br>
